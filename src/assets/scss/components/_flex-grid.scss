@@ -1,0 +1,110 @@
+//
+// Flex Grid
+// --------------------------------------------------
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $row-max-width;
+  display: flex;
+	flex-flow: row wrap;
+	@include clearfix();
+	.row{
+		max-width: none; 
+    margin-left: -$grid-gutter;
+    margin-right: -$grid-gutter;
+    @include clearfix();
+	}
+	&.expanded{
+		max-width: none;
+	}
+}
+
+.col{
+	flex: 1 1 0px;
+	padding-left: $grid-gutter;
+	padding-right: $grid-gutter;
+	min-width: initial;
+}
+
+// Small
+@for $i from 1 through $grid-columns {
+	.sm-#{$i} {
+		flex: 0 0 100% / $grid-columns * $i;
+		max-width: 100% / $grid-columns * $i;
+	}
+}
+@for $i from 1 through 6{
+	.sm-order-#{$i} {
+		order: $i;
+	}
+}
+
+// Medium
+@media #{$breakpoint-medium} {
+	@for $i from 1 through $grid-columns {
+		.md-#{$i} {
+			flex: 0 0 100% / $grid-columns * $i;
+			max-width: 100% / $grid-columns * $i;
+		}
+	}
+	@for $i from 1 through 6{
+		.md-order-#{$i} {
+			order: $i;
+		}
+	}
+}
+
+// Large
+@media #{$breakpoint-large} {
+	@for $i from 1 through $grid-columns {
+		.lg-#{$i} {
+			flex: 0 0 100% / $grid-columns * $i;
+			max-width: 100% / $grid-columns * $i;
+		}
+	}
+	@for $i from 1 through 6{
+		.lg-order-#{$i} {
+			order: $i;
+		}
+	}
+}
+
+// Sizing (shrink)
+.shrink{
+	flex: 0 0 auto;
+	max-width: 100%; 
+}
+
+// Vertical Align
+$flex-justify: (
+  'left': flex-start,
+  'right': flex-end,
+  'center': center,
+  'justify': space-between,
+  'spaced': space-around,
+);
+
+@each $vdir, $prop in $flex-justify{
+  .align-#{$vdir}{
+    justify-content: #{$prop};
+  }
+}
+
+// Horizontal
+
+$flex-align: (
+  'top': flex-start,
+  'bottom': flex-end,
+  'middle': center,
+  'stretch': stretch,
+);
+
+@each $hdir, $prop in $flex-justify{
+  .align-#{$hdir}{
+    align-items: #{$prop};
+  }
+}
+
+
+

@@ -1,0 +1,31 @@
+{
+  "name": "Huleos",
+  "version": "0.2.0",
+  "description": "Huleos is a small “mobile first” CSS framework was made by Julio Cesar Montenegro web designer and front-end",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --production"
+  },
+  "author": "Julio Cesar Montenegro",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.7",
+    "panini": "^1.3.0",
+    "run-sequence": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huleos/huleos.git"
+  }
+}

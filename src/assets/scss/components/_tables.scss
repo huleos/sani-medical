@@ -1,0 +1,40 @@
+//
+// Tables
+// --------------------------------------------------
+
+table{
+	width: 100%;
+	max-width: 100%;
+	background-color: $table-bg;
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+	margin-bottom: remCalc(15);
+	>thead{
+		background-color: $table-head-bg;
+		>tr{
+			>th{
+				vertical-align: bottom;
+				border-bottom: $table-border;
+				text-align: left;
+			}
+		}
+	}
+	th,
+	td{
+		padding: $table-cell-padding;
+		line-height: $base-line-height;
+		overflow: visible;
+		vertical-align: top;
+		border-bottom: $table-border;
+	}
+	td:last-child{
+		border-bottom: $table-border;
+	}
+}
+
+
+.table-hover>tbody>tr:hover>td,
+.table-hover>tbody>tr:hover>th {
+	background-color: $table-bg-hover;
+}

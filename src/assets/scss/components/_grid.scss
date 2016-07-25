@@ -1,0 +1,63 @@
+//
+// Grid
+// --------------------------------------------------
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $row-max-width;
+	@include clearfix();
+	.row{
+		max-width: none; 
+    margin-left: -$grid-gutter;
+    margin-right: -$grid-gutter;
+    @include clearfix();
+	}
+	&.expanded{
+		max-width: none;
+	}
+}
+
+.col{
+	position: relative;
+  padding-left: $grid-gutter;
+  padding-right: $grid-gutter;
+  width: 100%;
+  float: left;
+}
+
+// Small
+@for $i from 1 through $grid-columns {
+  .sm-#{$i} {
+  	width: 100% / $grid-columns * $i;
+  }
+}
+.col.sm-center{
+	@include col-center;
+}
+
+// Medium
+
+@media #{$breakpoint-medium} {
+	@for $i from 1 through $grid-columns {
+	  .md-#{$i} {
+	  	width: 100% / $grid-columns * $i;
+	  }
+	}
+	.col.md-center{
+		@include col-center;
+	}
+}
+
+// Large
+
+@media #{$breakpoint-large} {
+	@for $i from 1 through $grid-columns {
+	  .lg-#{$i} {
+	  	width: 100% / $grid-columns * $i;
+	  }
+	}
+	.col.lg-center{
+		@include col-center;
+	}
+}

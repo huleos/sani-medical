@@ -1,0 +1,42 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// Clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Columns Center
+@mixin col-center{ margin-left: auto; margin-right: auto; float: none;}
+
+// Button style
+@mixin button-style($color, $background) {
+	color: $color;
+	background-color: $background;
+	&:hover,
+	&:focus{
+		color: $color;
+		background-color: scale-color($background, $lightness: -15%);
+	}
+}
+
+// Button outline style
+@mixin button-outline-style($color){
+	color: $color;
+	background-color: transparent;
+	border-color: $color;
+	&:hover,
+	&:focus{
+		background-color: $color;
+		color: #fff;
+		border-color: $color;
+	}
+}

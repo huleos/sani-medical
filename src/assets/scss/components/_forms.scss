@@ -1,0 +1,86 @@
+//
+// Forms
+// --------------------------------------------------
+$inputs: '[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea';
+
+::placeholder{
+	color: $input-color-placeholder;
+}
+
+.form-group{
+	margin-bottom: $form-group-margin-bottom;
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: $form-label-margin-bottom;
+}
+
+#{$inputs} {
+	display: block;
+	width: 100%;
+	height: $input-height-base;
+	padding: $input-padding;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	color: $input-color;
+	background-color: $input-bg;
+	background-image: none;
+  border: $input-border;
+  border-radius: $input-radius;
+	transition: $input-transition;
+}
+
+#{$inputs} {
+	&:focus{
+		border-color: $input-border-focus;
+		outline: none;
+	}
+}
+
+select {
+	display: block;
+	width: 100%;
+	height: $input-height-base;
+	padding: $input-padding;
+	line-height: normal;
+	border: $input-border;
+	border-radius: $input-radius;
+	&:focus{
+		border-color: $input-border-focus;
+		outline: none;
+	}
+}
+
+.radio,
+.checkbox {
+	position: relative;
+	display: block;
+	margin-bottom: $form-label-margin-bottom;
+}
+
+.radio label,
+.checkbox label {
+	padding-left: remCalc(20);
+	margin-bottom: 0;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.radio input[type=radio],
+.radio-inline input[type=radio],
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox] {
+	position: absolute;
+	margin-top: remCalc(6);
+	margin-left: remCalc(-20);
+}
+
+input[type="file"] {
+	display: block;
+}
+
+textarea {
+  height: auto;
+}

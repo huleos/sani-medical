@@ -1,0 +1,56 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn{
+	display: inline-block;
+	margin-bottom: 0; // For input.btn
+	font-weight: $btn-font-weight;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	border: 1px solid transparent;
+	white-space: nowrap;
+	font-size: $base-font-size;
+	line-height: 1;
+	padding: $btn-padding;
+	user-select: none;
+	transition: background-color 300ms ease-out;
+
+	&:focus{
+		outline: none;
+	}
+
+	&:hover,
+	&:focus{
+		text-decoration: none;
+	}
+
+	&:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+  }
+}
+
+
+.btn-primary {
+	@include button-style($btn-primary-color, $btn-primary-bg);
+}
+
+.btn-success {
+	@include button-style($btn-success-color, $btn-success-bg);
+}
+
+.btn-alert {
+	@include button-style($btn-alert-color, $btn-alert-bg);
+}
+
+.btn-info {
+	@include button-style($btn-info-color, $btn-info-bg);
+}
+
+.btn-primary-outline {
+	@include button-outline-style($btn-primary-outline-bg);
+}

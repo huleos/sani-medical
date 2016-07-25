@@ -1,0 +1,32 @@
+//
+// Your custom SCSS should be written here...
+// --------------------------------------------------
+
+.navbar{
+	margin-bottom: remCalc(48);
+}
+
+.example-grid .col{
+	margin-bottom: 1rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	background-color: $gray-light;
+	border: 1px solid #ddd;
+}
+
+.example-grid .row{
+	margin-left: 0;
+	margin-right: 0;
+}
+.btn{
+	margin-bottom: remCalc(14);
+}
+footer{
+	padding: 3.125rem 0.9375rem;
+	background: #fafafa;
+	margin-top: 3.125rem;
+	border-top: 5px solid #f2f2f2;
+}
+[id*="id"]{
+	margin-top: 1.875rem;
+}
