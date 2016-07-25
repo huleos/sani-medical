@@ -1,6 +1,4 @@
-#Huleos v0.2.0
-
-Huleos is a small “mobile first” CSS framework, with useful default styles, and a responsive grid system.
+# Sani Medical
 
 ## Prerequisites
 
@@ -9,15 +7,11 @@ You will need the following things properly installed on your computer.
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
 
-## Quickstart
-
-* [Download it](https://github.com/huleos/huleos/archive/master.zip)
-
 ## Usage
 
 Download:
 ```
-git clone git@github.com:huleos/huleos.git projectname
+git clone git@github.com:huleos/sani-medical.git
 ```
 
 Open folder in your command line, and install dependencies:

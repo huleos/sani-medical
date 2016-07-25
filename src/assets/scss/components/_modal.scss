@@ -1,0 +1,63 @@
+//
+// Modal
+// --------------------------------------------------
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: $modal-zindex;
+	background-color: $modal-overlay;
+	overflow-y: scroll;
+}
+
+.modal-content {
+	position: relative;
+	width: auto;
+	height: 100%;
+	height: 100vh;
+	margin: auto;
+	padding: $modal-padding;
+	border: $modal-border;
+	background-color: $modal-bg;
+	overflow-y: auto;
+	z-index: $modal-zindex + 1;
+}
+
+.btn-close {
+	position: absolute;
+	color: $gray-dark;
+	right: remCalc(12);
+	top: remCalc(16);
+	font-size: remCalc(32);
+	line-height: 1;
+	cursor: pointer;
+	background: transparent;
+	padding: 0;
+	border: 0;
+	z-index: $modal-zindex + 2; 
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.btn-close:hover,
+.btn-close:focus{
+	color: $black;
+}
+
+@media #{$breakpoint-medium} {
+	.modal-content{
+		width: 60%;
+		height: auto;
+		margin-top: remCalc(100);
+	}
+}
+
+@media #{$breakpoint-large} {
+	.modal-content{
+		width: 90%;
+	}
+}
