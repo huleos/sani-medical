@@ -36,7 +36,7 @@ $font-sans-serif:               'Trebuchet MS', Helvetica, Arial, sans-serif !de
 $font-serif:                    'Dosis', Helvetica, Arial, sans-serif !default;
 $font-monospace:                Consolas, "Liberation Mono", Courier, monospace !default;
 $paragraph-margin-bottom:       remCalc(12) !default;
-$link-color:                    map-get($brand-color, primary);
+$link-color:                    map-get($brand-color, blue);
 $link-hover-color:              scale-color($link-color, $lightness: -14%) !default;
 $link-text-decoration:          none !default;
 $link-text-decoration-hover:    none !default;

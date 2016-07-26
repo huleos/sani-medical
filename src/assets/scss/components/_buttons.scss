@@ -54,3 +54,11 @@
 .btn-primary-outline {
 	@include button-outline-style($btn-primary-outline-bg);
 }
+
+.btn-white-outline{
+	@include button-outline-style($white);
+}
+
+.btn-purple{
+	@include button-style($white, map-get($brand-color, purple));
+}

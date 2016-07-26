@@ -12,8 +12,57 @@
 	}
 }
 
+// Footer
+footer{
+	@include clearfix;
+	&.fix{
+		padding-bottom: remCalc(98);
+		.band{
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		}
+	}
+}
+
+.footer-nav{
+	ul{
+		list-style: none;
+		padding-left: 0;
+		li{
+			padding: remCalc(6) remCalc(14);
+			a{
+				display: inline-block;
+			}
+			&.active{
+				a{
+					color: map-get($brand-color, purple);
+				}
+			}
+		}
+	}
+}
+
+.copyright{
+	background-color: map-get($brand-color, blue);
+	color: $white;
+	padding: remCalc(22) remCalc(15) remCalc(10);
+	margin-top: remCalc(22);
+}
+
+.band{
+	background-color: map-get($brand-color, purple);
+	padding: 15px 30px;
+	width: 100%;    
+}
+
+
+// Visibility
 .hide-for-small{
 	display: none !important;
+}
+.show-for-small{
+	display: block !important;
 }
 
 // Medium
@@ -21,9 +70,12 @@
 	.show-for-medium{
 		display: block !important;
 	}
+	.hide-for-medium{
+		display: none !important; 
+	}
 }
 
 // Large
-@media #{$breakpoint-medium} {
+@media #{$breakpoint-large} {
 
 }

@@ -2,15 +2,20 @@
 // Homepage
 // --------------------------------------------------
 
-$cover-overlay-blue: shade(rgba(map-get($brand-color, blue), .7), 30%);
+$cover-overlay-blue: rgba(map-get($brand-color, blue), .75);
 
 @mixin overlay($color, $blend){
 	background-color: $color;
 	background-blend-mode: $blend;
 }
 
+#homepage{
+	section{
+		margin-bottom: remCalc(48);
+	}
+}
+
 .cover{
-	margin-bottom: remCalc(48);
 	background: url('../img/cover-1.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -18,7 +23,7 @@ $cover-overlay-blue: shade(rgba(map-get($brand-color, blue), .7), 30%);
 	position: relative;
 	height: 60vh;
 	color: $white;
-	@include overlay(rgba(map-get($brand-color, blue), .75), multiply)
+	@include overlay($cover-overlay-blue, multiply);
 	// &:before{
 	// 	position: absolute;
 	// 	content: '';
@@ -69,14 +74,21 @@ $cover-overlay-blue: shade(rgba(map-get($brand-color, blue), .7), 30%);
 		text-transform: uppercase; 
 	}
 	>.col{
-		margin-bottom: remCalc(30);
+		&:first-child{
+			margin-bottom: remCalc(30);
+		}
 	}
 }
 
 @media #{$breakpoint-medium} {
 	
 	.services{
-		text-align: left; 
+		text-align: left;
+		>.col{
+			&:first-child{
+				margin-bottom: 0;
+			}
+		}
 	}
 
 }

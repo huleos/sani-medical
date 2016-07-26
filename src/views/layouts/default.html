@@ -27,6 +27,22 @@
     </nav>
   </header><!-- header -->
     {{> body}}
+  <footer {{#ifpage 'index'}}class="fix"{{/ifpage}}>
+    <div class="band text-center show-for-small hide-for-medium">
+      <a class="btn btn-white-outline" modal-open="myModal">I WANT BE PART</a>
+    </div>
+    <div class="footer-nav">
+      <ul class="row align-center">
+        <li {{#ifpage 'about-us'}}class="active"{{/ifpage}}><a href="{{root}}about-us.html">About us</a></li>
+        <li {{#ifpage 'our-medical-offer'}}class="active"{{/ifpage}}><a href="{{root}}our-medical-offer.html">Our Medical Offer</a></li>
+        <li {{#ifpage 'contact'}}class="active"{{/ifpage}}><a href="{{root}}contact.html">Contact</a></li>
+        <li {{#ifpage 'opportunity-career'}}class="active"{{/ifpage}}><a href="{{root}}opportunity-career.html">Opportunity Career</a></li>
+      </ul>
+      <div class="copyright hide-for-small show-for-medium text-center">
+        <p>Sani Medical Tourism &copy; 2016</p>
+      </div>
+    </div>
+  </footer>
   <div class="modal" modal="myModal">
     <div class="modal-content">
       <h2>Modal</h2>
