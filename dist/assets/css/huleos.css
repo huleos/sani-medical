@@ -1,4 +1,5 @@
 /*! Huleos v0.2.0 | huleos.com */
+@import url(https://fonts.googleapis.com/css?family=Dosis);
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -377,10 +378,10 @@ html {
 
 body {
   padding: 0;
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
+  color: #5d5d5d;
   background-color: #fefefe;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -449,10 +450,11 @@ h6 {
   font-size: 1rem; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: normal; }
+  font-weight: bold;
+  line-height: 1.2; }
 
 code,
 kbd,
@@ -1107,7 +1109,10 @@ textarea {
   display: flex;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .navbar-header {
   -webkit-flex: 0 0 100%;
@@ -1148,12 +1153,13 @@ textarea {
     .navbar-nav ul li a {
       display: inline-block;
       padding: 0.8125rem 0.9375rem;
-      color: #8a8a8a;
-      text-decoration: none; }
+      color: #147ea3;
+      text-decoration: none;
+      font-size: 0.875rem; }
       .navbar-nav ul li a:hover {
-        color: #0a0a0a; }
+        color: rgba(20, 126, 163, 0.65); }
     .navbar-nav ul li.active > a {
-      color: #0a0a0a; }
+      color: #742774; }
 
 @media screen and (min-width: 40em) {
   .navbar-header {
@@ -1172,30 +1178,65 @@ textarea {
       -ms-flex-pack: end;
       justify-content: flex-end; } }
 
-.navbar {
-  margin-bottom: 3rem; }
+.cover {
+  margin-bottom: 3rem;
+  background: url("../img/cover-1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 60vh;
+  color: #fefefe;
+  background-color: rgba(20, 126, 163, 0.75);
+  background-blend-mode: multiply; }
+  .cover > .col {
+    z-index: 3; }
+  .cover h1 {
+    position: relative;
+    margin-bottom: 2.125rem; }
+    .cover h1:before {
+      content: '';
+      height: 4px;
+      width: 150px;
+      position: absolute;
+      bottom: -16px;
+      margin-left: -75px;
+      left: 50%;
+      background: #fefefe; }
+  .cover h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; }
 
-.example-grid .col {
-  margin-bottom: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  background-color: #e6e6e6;
-  border: 1px solid #ddd; }
+.services {
+  text-align: center; }
+  .services img {
+    margin-bottom: 1.25rem; }
+  .services h3 {
+    color: #742774;
+    font-size: 1.125rem; }
+  .services p {
+    color: #147ea3;
+    font-family: "Dosis", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
+  .services > .col {
+    margin-bottom: 1.875rem; }
 
-.example-grid .row {
-  margin-left: 0;
-  margin-right: 0; }
+@media screen and (min-width: 40em) {
+  .services {
+    text-align: left; } }
 
-.btn {
-  margin-bottom: 0.875rem; }
+.navbar-header .nav-brand {
+  max-width: 10.9375rem;
+  transition: all .22s ease-out; }
+  .navbar-header .nav-brand:hover {
+    opacity: .75; }
 
-footer {
-  padding: 3.125rem 0.9375rem;
-  background: #fafafa;
-  margin-top: 3.125rem;
-  border-top: 5px solid #f2f2f2; }
+.hide-for-small {
+  display: none !important; }
 
-[id*="id"] {
-  margin-top: 1.875rem; }
+@media screen and (min-width: 40em) {
+  .show-for-medium {
+    display: block !important; } }
 
 /*# sourceMappingURL=huleos.css.map */

@@ -5,6 +5,7 @@
 .navbar{
 	display: flex;
 	flex-flow: row wrap;
+	align-items: center;
 }
 
 .navbar-header{
@@ -40,6 +41,7 @@
 				padding: $nav-link-padding;
 				color: $nav-link-color;
 				text-decoration: none;
+				font-size: remCalc(14);
 				&:hover{
 					color: $nav-link-color-hover;
 				}

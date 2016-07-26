@@ -11,223 +11,69 @@
     <link href="assets/css/huleos.css" rel="stylesheet">
   </head>
   <body>
-    <header class="navbar">
-    	<div class="navbar-header">
-    		<a href="" class="nav-brand">Huleos</a>
-    	</div>
-    	
-    	<nav class="navbar-nav">
-    		<ul>
-    			<li class="active"><a href="/">Home</a></li>
-    			<li><a href="#grid">Grid</a></li>
-    			<li><a href="#forms">Forms</a></li>
-    			<li><a href="#tables">Tables</a></li>
-    			<li><a href="#buttons">Buttons</a></li>
-    			<li><a href="#breadcrumbs">Breadcrumbs</a></li>
-    			<li><a href="#flex-video">Flex Video</a></li>
-    		</ul>
-    	</nav>
-    </header><!-- header -->
+  <header class="navbar">
+    <div class="navbar-header">
+      <a href="/" class="nav-brand">
+        <img src="assets/img/logo.svg" alt="">
+      </a>
+    </div>
+
+    <nav class="navbar-nav">
+      <ul>
+        <li ><a href="about-us.html">About us</a></li>
+        <li ><a href="our-medical-offer.html">Our Medical Offer</a></li>
+        <li ><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header><!-- header -->
     
-    <div class="row expanded">
-    	<section class="col sm-12 md-9">
-    		<h1>Welcome to Huleos Framework</h1>
-    		<h2>Huleos is a small “mobile first” CSS framework, with useful default styles, and a responsive grid system. </h2>
-    		<p>The purpose of this framework is to make it easier to create prototypes quickly. Huleos ignores the aesthetic design to avoid the burden of junk content, letting the creativity dependent on you.</p>
-    		<p>Huleos focuses on performance with a minimal structure files, it is developed in Sass for yourself can customize and use to suit your project.</p>
-    		<!-- Grid -->
-    		<h3 id="grid">Responsive grid System</h3>
-    		<hr>
-    		<div class="example-grid text-center">
-    			<div class="row">
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    				<div class="col sm-12 md-1">.col .sm-12 md-1</div>
-    			</div>
-    			<div class="row">
-    				<div class="col sm-6">.col .sm-6</div>
-    				<div class="col sm-6">.col .sm-6</div>
+    <div id="homepage" role="main">
+    	<section class="cover row expanded align-center align-middle text-center">
+    		<div class="col sm-12 md-6">
+    			<h1>The Path Starts Here</h1>
+    			<h2>Everything medical tourists are looking for is now at their disposal</h2>
+    			<div class="show-for-medium hide-for-small">
+    				<a class="btn btn-primary" modal-open="myModal">I WANT TO BE PART</a>
     			</div>
     		</div>
-    		<!-- Forms -->
-    		<h3 id="forms">Forms</h3>
-    		<hr>
-    		<div class="example-form">
-    			<form>
-    				<!-- Text Inputs -->
-    				<div class="row">
-    			    <div class="col sm-12 md-6 form-group">
-    			      <label>Input Label</label>
-    			      <input type="text" placeholder=".col .sm-12 .md-6">
-    			    </div>
-    			    <div class="col sm-12 md-6 form-group">
-    			      <label>Input Label</label>
-    			      <input type="text" placeholder=".col .sm-12 .md-6">
-    			    </div>
-    			  </div>
-    			  <!-- File -->
-    			  <div class="row">
-    			    <div class="col sm-12 form-group">
-    			      <label>File input</label>
-    			      <input type="file">
-    			    </div>
-    			  </div>
-    			  <!-- Select -->
-    			  <div class="row">
-    			    <div class="col sm-12 form-group">
-    			      <label>Select</label>
-    			      <select>
-    			        <option>1</option>
-    			        <option>2</option>
-    			        <option>3</option>
-    			        <option>4</option>
-    			        <option>5</option>
-    			      </select>
-    			    </div>
-    			  </div>
-    			  <!-- Checkbox and Radio -->
-    			  <div class="row">
-    			    <div class="col sm-12 md-6 form-group">
-    			      <label>Choose Your Favorite</label>
-    			        <div class="checkbox">
-    			        <label><input type="checkbox" value="">Option one</label>
-    			      </div>
-    			    </div>
-    			    <div class="col sm-12 md-6 form-group">
-    			      <label>Choose Your Favorite</label>
-    			        <div class="radio">
-    			        <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">Option one</label>
-    			      </div>
-    			      <div class="radio">
-    			        <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Option two</label>
-    			      </div>
-    			    </div>
-    			  </div>
-    			  <!-- Textarea -->
-    			  <div class="row">
-    			    <div class="col sm-12 form-group">
-    			      <label>Textarea</label>
-    			      <textarea rows="3" placeholder="col sm-12"></textarea>
-    			    </div>
-    			  </div>
-    			  <!-- Submit -->
-    			  <div class="row">
-    			    <div class="col sm-12">
-    			  	  <button type="submit" class="btn btn-primary">Submit</button>
-    			    </div>
-    			  </div>
-    			</form>
-    		</div>
-    		<!-- Tables -->
-    		<h3 id="tables">Tables</h3>
-    		<hr>
-    		<table class="table-hover">
-        		<thead>
-        			<tr>
-          		  <th>#</th>
-          		  <th>Table Header 1</th>
-          		  <th>Table Header 2</th>
-          		  <th>Table Header 3</th>
-          		</tr>
-        		</thead>
-    
-        	<tbody>
-        		<tr>
-        		  <td>1</td>
-        		  <td>Content Here</td>
-        		  <td>Content Here</td>
-        		  <td>Content Here</td>
-        		</tr>
-    
-        		<tr>
-        		  <td>2</td>
-        		  <td>Content Here</td>
-        		  <td>Content Here</td>
-        		  <td>Content Here</td>
-        		</tr>
-    
-        		<tr>
-        		  <td>3</td>
-        		  <td>Content Here</td>
-        		  <td>Content Here</td>
-        		  <td>Content Here</td>
-        		</tr>
-    
-        		<tr>
-        		  <td>4</td>
-        		  <td>Content Here</td>
-        		  <td>Content Here</td>
-        		  <td>Content Here</td>
-        		</tr>
-        	</tbody>
-        </table>
-    
-        <!-- Flex Video -->
-    		<h3 id="flex-video">Flex Video</h3>
-    		<p>Flex Video lets you scale automatically embedded content. If you want to embed a video from Youtube, Vimeo or other site that uses <code>iframe</code>, <code>embed</code>, <code>video</code> or object elements, you just have to wrap in the <code>div.flex-video</code>. You can add additional classes <code>widescreen</code> and <code>vimeo</code> to change their appearance</p>
-    		<hr>
-    		<div class="row">
-    			<div class="col sm-12 md-6">
-    				<div class="flex-video widescreen">
-    					<iframe width="560" height="315" src="https://www.youtube.com/embed/8kKx8PneuR8" frameborder="0" allowfullscreen></iframe>
+    	</section><!-- .cover -->
+    	<section class="services row">
+    		<div class="col sm-12 md-6">
+    			<div class="row align-center">
+    				<div class="col sm-4 md-2">
+    					<img src="assets/img/medical-ico.svg" alt="">
     				</div>
-    			</div>
-    			<div class="col sm-12 md-6">
-    				<div class="flex-video widescreen vimeo">
-    					<iframe src="https://player.vimeo.com/video/14034997" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    				<div class="col sm-12 md-10">
+    					<h3>A Wide Variety of<br> Medical Services</h3>
+    					<p>Dental Clinics • Stem Cell Therapy • Hyperbaric Therapy • SPA • Surgery Center • Optical Services</p>
     				</div>
     			</div>
     		</div>
-    	</section>
-    	<aside class="col sm-12 md-3">
-    		<!-- Buttons -->
-    		<h3 id="buttons">Buttons</h3>
-    		<hr>
-    		<a href="" class="btn btn-primary">.btn .btn-primary</a>
-    		<a href="" class="btn btn-primary-outline">.btn .btn-primary-outline</a>
-    		<a href="" class="btn btn-success">.btn .btn-success</a>
-    		<a href="" class="btn btn-alert">.btn .btn-alert</a>
-    		<a href="" class="btn btn-info">.btn .btn-info</a>
-    		<!-- Buttons -->
-    		<h3 id="breadcrumbs">Breadcrumbs</h3>
-    		<hr>
-    		<ol class="breadcrumbs">
-    			<li><a href="#">Home</a></li>
-    			<li><a href="#">Features</a></li>
-    			<li class="active">Element</li>
-    		</ol>
-    
-    		<div class="modal" modal="popup1">
-    			<div class="modal-content">
-    				<h2>Modal</h2>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum distinctio dolor minima eligendi assumenda, impedit tenetur mollitia, architecto obcaecati id, repellat tempora necessitatibus sit esse aperiam facilis libero sequi cumque.</p>
-    				<button class="btn-close" modal-close="popup1">&times;</button>
+    		<div class="col sm-12 md-6">
+    			<div class="row align-center">
+    				<div class="col sm-4 md-2">
+    					<img src="assets/img/ping-ico.svg" alt="">
+    				</div>
+    				<div class="col sm-12 md-10">
+    					<h3>With all of the necesary<br> to make a great experience</h3>
+    					<p>Hotels • Restaurants • Minimart • Pharmacy • Clothing • Jewelry • Shuttle Service</p>
+    				</div>
     			</div>
     		</div>
-    		<a class="btn btn-primary" modal-open="popup1">Click me for a modal</a>
-    
-    	</aside>
-    </div><!-- Content -->
-    
-    <footer>
-    		<div class="row">
-    			<div class="col md-12 text-center">
-    				<h4>Build something great.</h4>
-    				<a href="https://github.com/huleos/huleos.github.io/archive/master.zip" class="btn btn-primary-outline">Download 0.2.0</a>
-    				<a href="https://github.com/huleos/huleos.github.io" class="btn btn-primary">View on Github</a>
-    				<p>Made by <a href="http://huleos.com">Julio Cesar Montenegro</a></p>
-    			</div>
+    	</section><!-- .services -->
+    	<section class="resume row align-center">
+    		<div class="col sm-12 md-8 ">
+    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis assumenda nobis aliquid dicta voluptatibus, quos molestias accusantium tempore enim aut saepe repellat ad porro, cumque veritatis, quia id excepturi repellendus!</p>
     		</div>
-    	</footer><!-- footer -->
+    	</section><!-- .resume -->
+    </div><!-- #homepage -->
+  <div class="modal" modal="myModal">
+    <div class="modal-content">
+      <h2>Modal</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum distinctio dolor minima eligendi assumenda, impedit tenetur mollitia, architecto obcaecati id, repellat tempora necessitatibus sit esse aperiam facilis libero sequi cumque.</p>
+      <button class="btn-close" modal-close="myModal">&times;</button>
+    </div>
+  </div><!-- .modal -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

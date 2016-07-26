@@ -4,29 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{#if title}}{{title}}{{else}}Huleos - Responsive Framework - Powered by Sass{{/if}}</title>
+    <title>Huleos - Responsive Framework - Powered by Sass</title>
     <meta
-      name="description" content="{{#if description}}{{description}}{{else}}Huleos is a small “mobile first” CSS framework, with useful default styles, and a responsive grid system.{{/if}}">
-    <link href="{{root}}assets/img/favicon.png" type="image/png" rel="icon">
-    <link href="{{root}}assets/css/huleos.css" rel="stylesheet">
+      name="description" content="Huleos is a small “mobile first” CSS framework, with useful default styles, and a responsive grid system.">
+    <link href="assets/img/favicon.png" type="image/png" rel="icon">
+    <link href="assets/css/huleos.css" rel="stylesheet">
   </head>
   <body>
   <header class="navbar">
     <div class="navbar-header">
       <a href="/" class="nav-brand">
-        <img src="{{root}}assets/img/logo.svg" alt="">
+        <img src="assets/img/logo.svg" alt="">
       </a>
     </div>
 
     <nav class="navbar-nav">
       <ul>
-        <li {{#ifpage 'about-us'}}class="active"{{/ifpage}}><a href="{{root}}about-us.html">About us</a></li>
-        <li {{#ifpage 'our-medical-offer'}}class="active"{{/ifpage}}><a href="{{root}}our-medical-offer.html">Our Medical Offer</a></li>
-        <li {{#ifpage 'contact'}}class="active"{{/ifpage}}><a href="{{root}}contact.html">Contact</a></li>
+        <li class="active"><a href="about-us.html">About us</a></li>
+        <li ><a href="our-medical-offer.html">Our Medical Offer</a></li>
+        <li ><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header><!-- header -->
-    {{> body}}
+    
+    <h1>About Us</h1>
   <div class="modal" modal="myModal">
     <div class="modal-content">
       <h2>Modal</h2>
@@ -34,6 +35,6 @@
       <button class="btn-close" modal-close="myModal">&times;</button>
     </div>
   </div><!-- .modal -->
-    <script src="{{root}}assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

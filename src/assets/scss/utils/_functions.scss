@@ -6,3 +6,8 @@
 @function remCalc($size, $base-value: 16) {
   @return ($size / $base-value) + rem;
 }
+
+// Shade
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
