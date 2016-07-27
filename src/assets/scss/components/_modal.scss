@@ -14,7 +14,7 @@
 	overflow-y: scroll;
 }
 
-.modal-content {
+.modal-container {
 	position: relative;
 	width: auto;
 	height: 100%;
@@ -29,7 +29,7 @@
 
 .btn-close {
 	position: absolute;
-	color: $gray-dark;
+	color: $white;
 	right: remCalc(12);
 	top: remCalc(16);
 	font-size: remCalc(32);
@@ -45,19 +45,19 @@
 
 .btn-close:hover,
 .btn-close:focus{
-	color: $black;
+	color: darken($white, 20%);
 }
 
 @media #{$breakpoint-medium} {
-	.modal-content{
-		width: 60%;
+	.modal-container{
+		width: 50%;
 		height: auto;
 		margin-top: remCalc(100);
 	}
 }
 
 @media #{$breakpoint-large} {
-	.modal-content{
-		width: 90%;
-	}
+	// .modal-container{
+	// 	width: 50%;
+	// }
 }

@@ -11,45 +11,10 @@
     <link href="{{root}}assets/css/huleos.css" rel="stylesheet">
   </head>
   <body>
-  <header class="navbar">
-    <div class="navbar-header">
-      <a href="/" class="nav-brand">
-        <img src="{{root}}assets/img/logo.svg" alt="">
-      </a>
-    </div>
-
-    <nav class="navbar-nav">
-      <ul>
-        <li {{#ifpage 'about-us'}}class="active"{{/ifpage}}><a href="{{root}}about-us.html">About us</a></li>
-        <li {{#ifpage 'our-medical-offer'}}class="active"{{/ifpage}}><a href="{{root}}our-medical-offer.html">Our Medical Offer</a></li>
-        <li {{#ifpage 'contact'}}class="active"{{/ifpage}}><a href="{{root}}contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header><!-- header -->
-    {{> body}}
-  <footer {{#ifpage 'index'}}class="fix"{{/ifpage}}>
-    <div class="band text-center show-for-small hide-for-medium">
-      <a class="btn btn-white-outline" modal-open="myModal">I WANT BE PART</a>
-    </div>
-    <div class="footer-nav">
-      <ul class="row align-center">
-        <li {{#ifpage 'about-us'}}class="active"{{/ifpage}}><a href="{{root}}about-us.html">About us</a></li>
-        <li {{#ifpage 'our-medical-offer'}}class="active"{{/ifpage}}><a href="{{root}}our-medical-offer.html">Our Medical Offer</a></li>
-        <li {{#ifpage 'contact'}}class="active"{{/ifpage}}><a href="{{root}}contact.html">Contact</a></li>
-        <li {{#ifpage 'opportunity-career'}}class="active"{{/ifpage}}><a href="{{root}}opportunity-career.html">Opportunity Career</a></li>
-      </ul>
-      <div class="copyright hide-for-small show-for-medium text-center">
-        <p>Sani Medical Tourism &copy; 2016</p>
-      </div>
-    </div>
-  </footer>
-  <div class="modal" modal="myModal">
-    <div class="modal-content">
-      <h2>Modal</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum distinctio dolor minima eligendi assumenda, impedit tenetur mollitia, architecto obcaecati id, repellat tempora necessitatibus sit esse aperiam facilis libero sequi cumque.</p>
-      <button class="btn-close" modal-close="myModal">&times;</button>
-    </div>
-  </div><!-- .modal -->
-    <script src="{{root}}assets/js/main.js"></script>
+  {{> header}}
+  {{> body}}
+  {{> footer}}
+  {{> modal}}
+  <script src="{{root}}assets/js/main.js"></script>
   </body>
 </html>

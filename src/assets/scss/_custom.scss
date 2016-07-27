@@ -14,7 +14,6 @@
 
 // Footer
 footer{
-	@include clearfix;
 	&.fix{
 		padding-bottom: remCalc(98);
 		.band{
@@ -56,23 +55,43 @@ footer{
 	width: 100%;    
 }
 
-
-// Visibility
-.hide-for-small{
-	display: none !important;
+// Modal
+.modal-header{
+	margin: remCalc(-16);
+	margin-bottom: remCalc(32);
+	padding: remCalc(16); 
+	background-color: map-get($brand-color, blue);
+	text-align: center;
+	img{
+		max-width: 80px;
+		display: block;
+		margin: 0 auto remCalc(16); 
+	}
+	p{
+		color: $white;
+		font-size: remCalc(24);
+	}
 }
-.show-for-small{
-	display: block !important;
+
+.modal-content{
+	max-width: remCalc(320);
+	margin: 0 auto; 
+	text-align: center; 
+	.btn{
+		display: block;
+		margin-bottom: remCalc(16);
+	}
 }
 
 // Medium
 @media #{$breakpoint-medium} {
-	.show-for-medium{
-		display: block !important;
+
+	footer{
+		&.fix{
+			padding-bottom: 0;
+		}
 	}
-	.hide-for-medium{
-		display: none !important; 
-	}
+
 }
 
 // Large

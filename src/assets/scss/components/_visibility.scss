@@ -1,0 +1,34 @@
+//
+// Visibility
+// --------------------------------------------------
+
+.hide-for-small{
+	display: none !important;
+}
+.show-for-small{
+	display: block !important;
+}
+
+// Medium
+@media #{$breakpoint-medium} {
+
+	.show-for-medium{
+		display: block !important;
+	}
+	.hide-for-medium{
+		display: none !important; 
+	}
+
+}
+
+// Large
+@media #{$breakpoint-large} {
+
+	.show-for-large{
+		display: block !important;
+	}
+	.hide-for-large{
+		display: none !important; 
+	}
+	
+}

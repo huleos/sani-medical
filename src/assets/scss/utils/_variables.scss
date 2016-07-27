@@ -100,6 +100,7 @@ $input-transition:            border-color 300ms ease-in-out !default;
 // 7. Navbar
 // -------------------------
 
+$nav-padding:                  0 remCalc(16) !default;
 $nav-brand-color:              $black !default;
 $nav-brand-padding:            remCalc(13) remCalc(15) !default;
 $nav-link-padding:             remCalc(13) remCalc(15) !default;
@@ -138,7 +139,7 @@ $flexvideo-widescreen-padding-bottom: 56.25% !default;
 // -------------------------
 
 $modal-bg: $white !default;
-$modal-border: 1px solid $gray-medium !default;
+$modal-border: 0 !default;
 $modal-padding: remCalc(16) !default;
 $modal-overlay: rgba($black, 0.45) !default;
 $modal-zindex: 100;
