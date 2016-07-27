@@ -1219,9 +1219,6 @@ textarea {
   .hide-for-large {
     display: none !important; } }
 
-#homepage section {
-  margin-bottom: 3rem; }
-
 .cover {
   background: url("../img/cover-1.jpg");
   background-position: center center;
@@ -1231,7 +1228,8 @@ textarea {
   height: 60vh;
   color: #fefefe;
   background-color: rgba(20, 126, 163, 0.75);
-  background-blend-mode: multiply; }
+  background-blend-mode: multiply;
+  margin-bottom: 3rem; }
   .cover > .col {
     z-index: 3; }
   .cover h1 {
@@ -1277,6 +1275,9 @@ textarea {
   .navbar-header .nav-brand:hover {
     opacity: .75; }
 
+section {
+  margin-bottom: 3rem; }
+
 footer.fix {
   padding-bottom: 6.125rem; }
   footer.fix .band {
@@ -1302,7 +1303,7 @@ footer.fix {
 
 .band {
   background-color: #742774;
-  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
   width: 100%; }
 
 .modal-header {
@@ -1326,6 +1327,9 @@ footer.fix {
   .modal-content .btn {
     display: block;
     margin-bottom: 1rem; }
+
+.rescue {
+  margin-top: 2rem; }
 
 @media screen and (min-width: 40em) {
   footer.fix {

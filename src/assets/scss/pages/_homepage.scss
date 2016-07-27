@@ -10,9 +10,7 @@ $cover-overlay-blue: rgba(map-get($brand-color, blue), .75);
 }
 
 #homepage{
-	section{
-		margin-bottom: remCalc(48);
-	}
+
 }
 
 .cover{
@@ -24,6 +22,7 @@ $cover-overlay-blue: rgba(map-get($brand-color, blue), .75);
 	height: 60vh;
 	color: $white;
 	@include overlay($cover-overlay-blue, multiply);
+	margin-bottom: remCalc(48);
 	// &:before{
 	// 	position: absolute;
 	// 	content: '';

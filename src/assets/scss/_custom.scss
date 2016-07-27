@@ -12,6 +12,10 @@
 	}
 }
 
+section{
+	margin-bottom: remCalc(48);
+}
+
 // Footer
 footer{
 	&.fix{
@@ -51,7 +55,7 @@ footer{
 
 .band{
 	background-color: map-get($brand-color, purple);
-	padding: 15px 30px;
+	padding: remCalc(15) remCalc(30);
 	width: 100%;    
 }
 
@@ -81,6 +85,10 @@ footer{
 		display: block;
 		margin-bottom: remCalc(16);
 	}
+}
+
+.rescue{
+	margin-top: remCalc(32);
 }
 
 // Medium
