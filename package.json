@@ -27,5 +27,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/huleos/huleos.git"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "jquery-validation": "^1.15.1"
   }
 }

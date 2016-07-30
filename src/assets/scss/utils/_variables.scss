@@ -55,6 +55,10 @@ $code-color:                    $black !default;
 $code-padding:                  remCalc(2) remCalc(5) !default;
 $code-background:               scale-color($gray-light, $lightness: 45%) !default;
 $code-border:                   1px solid $gray-medium !default;
+$cite-font-size:                remCalc(14) !default;
+$cite-color:                    $gray-dark !default;
+$list-style-type:               disc !default;
+$list-margin-left:              1.25rem !default;
 
 // 3. Tables
 // -------------------------

@@ -6,7 +6,6 @@
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
-	padding: $nav-padding;
 }
 
 .navbar-header{
@@ -56,22 +55,25 @@
 	}
 }
 
-
 // Medium
 @media #{$breakpoint-medium} {
+	
 	.navbar-header{
-		flex: 1;
+		flex: 0 0 auto;
 		justify-content: flex-start;
 	}
 	.navbar-nav{
-		flex: 2;
+		flex: 1 1 0px;
 		ul{
 			justify-content: flex-end;
-			li{
-				a{
-					font-size: inherit; 
-				}
-			}
 		}
+	}
+
+}
+
+// Large
+@media #{$breakpoint-large} {
+	.navbar{
+		padding: $nav-padding;	
 	}
 }

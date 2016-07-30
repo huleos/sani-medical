@@ -21,5 +21,10 @@ $(function() {
 	// 	var targeted_modal_class = $(this).attr('modal');
 	// 	$('[modal="' + targeted_modal_class + '"]').fadeOut(350);
 	// });
+	jQuery.validator.setDefaults({
+	  debug: true,
+	  success: "valid"
+	});
+	$('#contactForm').validate();
 
 });

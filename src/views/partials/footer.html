@@ -1,7 +1,9 @@
 <footer {{#ifpage 'index'}}class="fix"{{/ifpage}}>
+  {{#unlesspage 'contact'}}
   <div class="band text-center show-for-small hide-for-medium">
     <a class="btn btn-white-outline" modal-open="myModal">I WANT BE PART</a>
   </div>
+  {{/unlesspage}}
   <div class="footer-nav">
     <ul class="row align-center">
       <li {{#ifpage 'about-us'}}class="active"{{/ifpage}}><a href="{{root}}about-us.html">About us</a></li>
@@ -9,8 +11,8 @@
       <li {{#ifpage 'contact'}}class="active"{{/ifpage}}><a href="{{root}}contact.html">Contact</a></li>
       <li {{#ifpage 'opportunity-career'}}class="active"{{/ifpage}}><a href="{{root}}opportunity-career.html">Opportunity Career</a></li>
     </ul>
-    <div class="copyright hide-for-small show-for-medium text-center">
-      <p>Sani Medical Tourism &copy; 2016</p>
-    </div>
+  </div>
+  <div class="copyright text-center">
+    <p>Sani Medical Tourism &copy; 2016</p>
   </div>
 </footer>
