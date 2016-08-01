@@ -2,64 +2,6 @@
 // Homepage
 // --------------------------------------------------
 
-$cover-overlay-blue: rgba(map-get($brand-color, blue), .75);
-
-@mixin overlay($color, $blend){
-	background-color: $color;
-	background-blend-mode: $blend;
-}
-
-#homepage{
-
-}
-
-.cover{
-	background: url('../img/cover-1.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	min-height: 60vh;
-	padding-top: remCalc(16);
-	padding-bottom: remCalc(16);
-	color: $white;
-	@include overlay($cover-overlay-blue, multiply);
-	margin-bottom: remCalc(48);
-	// &:before{
-	// 	position: absolute;
-	// 	content: '';
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	top: 0;
-	// 	left: 0;
-	// 	// background-color: $cover-overlay-blue;
-	// 	background-color: red;
-	// 	background-blend-mode: multiply;
-	// }
-	>.col{
-		z-index: 3; 
-	}
-	h1{
-		position: relative;
-		margin-bottom: remCalc(34);  
-		&:before{
-			content: '';
-			height: 4px;
-			width: 150px;
-			position: absolute;
-			bottom: -16px;
-			margin-left: -75px;
-			left: 50%;
-			background: $white;
-		}
-	}
-	h2{
-		font-weight: normal;
-		font-size: remCalc(24);
-		margin-bottom: remCalc(24);
-	}
-}
-
 .services{
 	img{
 		margin-bottom: remCalc(20);

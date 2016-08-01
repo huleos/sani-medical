@@ -1,0 +1,55 @@
+$cover-bg-one: url('../img/cover-1.jpg');
+$cover-bg-two: url('../img/cover-2.jpg');
+$cover-overlay-blue: rgba(map-get($brand-color, blue), .75);
+$cover-overlay-purple: rgba(map-get($brand-color, purple), .90);
+
+@mixin overlay($color, $blend){
+	background-color: $color;
+	background-blend-mode: $blend;
+}
+
+#contact{
+	.cover{
+		@include overlay($cover-overlay-purple, multiply);
+	}
+}
+
+.cover{
+	background-image: $cover-bg-one;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	min-height: 60vh;
+	padding-top: remCalc(16);
+	padding-bottom: remCalc(16);
+	color: $white;
+	@include overlay($cover-overlay-blue, multiply);
+	margin-bottom: remCalc(48);
+	>.col{
+		z-index: 3; 
+	}
+	h1{
+		position: relative;
+		margin-bottom: remCalc(34);  
+		&:before{
+			content: '';
+			height: 4px;
+			width: 150px;
+			position: absolute;
+			bottom: -16px;
+			margin-left: -75px;
+			left: 50%;
+			background: $white;
+		}
+	}
+	h2{
+		font-weight: normal;
+		font-size: remCalc(24);
+		margin-bottom: remCalc(24);
+	}
+	&.cover-2{
+		background-image: $cover-bg-two;
+		@include overlay($cover-overlay-purple, multiply);
+	}
+}

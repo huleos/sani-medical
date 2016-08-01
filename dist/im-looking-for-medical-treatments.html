@@ -26,47 +26,71 @@
       </ul>
     </nav>
   </header><!-- header -->
-  <div id="homepage" role="main">
-  	<section class="cover row expanded align-center align-middle text-center">
+  <div id="im-looking-for-medical-treatments" role="main">
+  	<section class="cover cover-2 row expanded align-center align-middle text-center">
   		<div class="col sm-12 md-6">
-  			<h1>The Path Starts Here</h1>
-  			<h2>Everything medical tourists are looking for is now at their disposal</h2>
-  			<div class="show-for-medium hide-for-small">
-  				<a class="btn btn-purple" modal-open="myModal">I WANT TO BE PART</a>
-  			</div>
+  			<h1>I’m Looking for Medical Treatments</h1>
+  			<h2>Recovering your health has never been like this</h2>
+  			<ul>
+  				<li>Dentistry</li>
+  				<li>Stem Cell Therapy</li>
+  				<li>Hyperbaric Therapy</li>
+  				<li>Optical Services</li>
+  				<li>Surgery Center</li>
+  				<li>Hotels</li>
+  				<li>Restaurants</li>
+  				<li>Shopping</li>
+  				<li>Shuttle Services</li>
+  			</ul>
   		</div>
   	</section><!-- .cover -->
-  	<section class="services row">
-  		<div class="col sm-12 md-6">
-  			<div class="row align-center">
-  				<div class="col sm-4 md-2">
-  					<img src="assets/img/medical-ico.svg" alt="">
-  				</div>
-  				<div class="col sm-12 md-10">
-  					<h3>A Wide Variety of<br> Medical Services</h3>
-  					<p>Dental Clinics • Stem Cell Therapy • Hyperbaric Therapy • SPA • Surgery Center • Optical Services</p>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="col sm-12 md-6">
-  			<div class="row align-center">
-  				<div class="col sm-4 md-2">
-  					<img src="assets/img/ping-ico.svg" alt="">
-  				</div>
-  				<div class="col sm-12 md-10">
-  					<h3>With all of the necesary<br> to make a great experience</h3>
-  					<p>Hotels • Restaurants • Minimart • Pharmacy • Clothing • Jewelry • Shuttle Service</p>
-  				</div>
-  			</div>
-  		</div>
-  	</section><!-- .services -->
-  	<section class="resume row align-center">
+  	<section class="row align-center">
   		<div class="col sm-12 md-8 ">
-  			<p>Since 1985, Sani Dental Group stablished in Los Algodones, Mexico and years later it became the largest dental clinic in town offering high-quality treatments and services, such as restaurants, lodging, shuttle, and more. Now, with decades of experience, Sani Medical Tourism has born with the same vision of providing a complete and unique medical experience for those in need of recover their health.</p>
+  			<p>Medical Tourism now has a new name. You won’t have to worry about hotel reservations or how to arrive to Mexico, the only thing you have to do is make some space in your agenda, and we will take care of the rest. Sani Medical Tourism has a complete experience prepared for you.</p>
   		</div>
-  	</section><!-- .resume -->
-  </div><!-- #homepage -->
-  <footer class="fix">
+  	</section>
+  	<section class="contact-form">
+  		<form action="post" id="contactForm">
+  			<div class="row">
+  				<div class="col sm-12 md-8">
+  					<div class="row">
+  						<div class="col sm-12 md-6 form-group">
+  							<input name="yourName" type="text" placeholder="Your name" required>
+  						</div>
+  						<div class="col sm-12 md-6 form-group">
+  							<input name="yourNumber" type="text" placeholder="Phone number" required>
+  						</div>
+  						<div class="col sm-12 md-6 form-group">
+  							<input name="yourEmailAddress" type="text" placeholder="EmailAddress" required>
+  						</div>
+  						<div class="col sm-12 md-6 form-group">
+  							<input name="yourCity" type="text" placeholder="City" required>
+  						</div>
+  						<div class="col sm-12 md-6 form-group">
+  							<select name="yourWork" required>
+  								<option value="" default>What treatment are you looking for?</option>
+  								<option value="Cosmetic">Cosmetic</option>
+  								<option value="Dental">Dental</option>
+  								<option value="Stem Cell">Stem Cell</option>
+  								<option value="Vision">Vision</option>
+  								<option value="Other">Other</option>
+  							</select>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="col sm-12 md-4">
+  					<div class="form-group">
+  						<textarea name="yourMessage" rows="7" placeholder="Your message..." required></textarea>
+  					</div>
+  					<div class="text-left">
+  						<button type="submit" class="btn btn-white-outline">SUBMIT</button>
+  					</div>
+  				</div>
+  			</div>
+  		</form>
+  	</section>
+  </div>
+  <footer >
     <div class="band text-center show-for-small hide-for-medium">
       <a class="btn btn-white-outline" modal-open="myModal">I WANT BE PART</a>
     </div>

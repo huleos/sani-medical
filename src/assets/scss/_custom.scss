@@ -102,20 +102,27 @@ ul{
 }
 
 // Contact
-#contact{
-
-}
 
 .contact-form{
 	background-color: darken(map-get($brand-color, blue), 20%);
-	padding-top: remCalc(32);
-	padding-bottom: remCalc(32);
+	padding-top: remCalc(48);
+	padding-bottom: remCalc(48);
 	color: $white;
 	margin-bottom: remCalc(22);
+	p{
+		margin-bottom: remCalc(32);
+	}
+}
+
+#opportunity-career{
+	.cover{
+		margin-bottom: 0;
+	}
 }
 
 input,
-select{
+select,
+textarea{
 	&.error{
 		background-color: rgba(map-get($brand-color, alert), 0.1);
 		border-color: map-get($brand-color, alert);

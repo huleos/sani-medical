@@ -89,7 +89,7 @@ $breakpoint-large: "screen and (min-width: 64em)";
 // 6. Forms
 // ------------------------
 
-$form-group-margin-bottom:    remCalc(15) !default;
+$form-group-margin-bottom:    remCalc(22) !default;
 $form-label-margin-bottom:    remCalc(10) !default;
 $input-bg:                    $white !default;
 $input-color:                 $black !default;
@@ -97,7 +97,7 @@ $input-border:                1px solid #ccc !default;
 $input-border-focus:          $gray-dark !default;
 $input-color-placeholder:     $gray-dark !default;
 $input-padding:               remCalc(8) remCalc(12) !default;
-$input-height-base:           remCalc(42) !default;
+$input-height-base:           remCalc(48) !default;
 $input-radius:                $global-radius !default;
 $input-transition:            border-color 300ms ease-in-out !default;
 

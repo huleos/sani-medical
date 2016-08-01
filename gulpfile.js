@@ -22,7 +22,6 @@ const PRODUCTION = gutil.env.production;
 const jsFiles = [
 	'node_modules/jquery/dist/jquery.js',
 	'node_modules/jquery-validation/dist/jquery.validate.js',
-	'node_modules/jquery-validation/dist/additional-methods.js',
 	'src/assets/js/main.js'
 ];
 

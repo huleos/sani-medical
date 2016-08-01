@@ -66,6 +66,10 @@ select {
 	margin-bottom: 0;
 	font-weight: normal;
 	cursor: pointer;
+	margin-left: remCalc(10);
+	&:first-child{
+		margin: 0;
+	}
 }
 
 .radio input[type=radio],
@@ -73,7 +77,7 @@ select {
 .checkbox input[type=checkbox],
 .checkbox-inline input[type=checkbox] {
 	position: absolute;
-	margin-top: remCalc(6);
+	margin-top: remCalc(3);
 	margin-left: remCalc(-20);
 }
 
