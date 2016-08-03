@@ -11,12 +11,14 @@ $phone = $_POST['yourNumber'];
 $company = $_POST['yourCompany'];
 $website = $_POST['yourWebsite'];
 $email = $_POST['yourEmail'];
+$work = $_POST['yourWork'];
 $role = $_POST['yourRole'];
+$worked = $_POST['yourWorked'];
 $message = $_POST['yourMessage'];
 $origin = $_POST['elOrigin'];
 $fieldHidden = isset($_POST['elAddress']) ? $_POST['elAddress'] : null;
 
-if($name && $phone && $company && $website && $email && $role && $message)
+if($name && $phone && $company && $website && $email && $work && $role && $worked && $message)
 {
 	$to = $myemail; 
 	$email_subject = "$origin";
@@ -27,7 +29,9 @@ if($name && $phone && $company && $website && $email && $role && $message)
 	Company: $company \n
 	Website: $website \n
 	Email: $email \n
+	How many clinics/hospital/doctors do you work with?: $work \n
 	Role: $role \n
+	Have you worked in Mexico before? $worked \n
 	Message: \n $message"; 
 	
 	$headers = "From: $noreply\n"; /*Campo del Email del cliente*/
