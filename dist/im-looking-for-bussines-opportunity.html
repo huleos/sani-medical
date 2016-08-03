@@ -51,7 +51,7 @@
   			<p>Join the fastest-growing medical tourism corporate in Mexico</p>
   		</div>
   	</div>
-  		<form action="post" id="contactForm">
+  		<form action="bussines_opportunity_form.php" method="post">
   			<div class="row">
   				<div class="col sm-12 md-8">
   					<div class="row">
@@ -62,17 +62,13 @@
   							<input name="yourNumber" type="text" placeholder="Phone number" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
-  							<input name="yourEmailAddress" type="text" placeholder="EmailAddress" required>
+  							<input name="yourCompany" type="text" placeholder="Company" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
-  							<select name="yourWork" required>
-  								<option value="" default>What medical services do you offer?</option>
-  								<option value="Cosmetic">Cosmetic</option>
-  								<option value="Dental">Dental</option>
-  								<option value="Fertility">Fertility</option>
-  								<option value="Surgery">Surgery</option>
-  								<option value="Other">Other</option>
-  							</select>
+  							<input name="yourWebsite" type="text" placeholder="Website" required>
+  						</div>
+  						<div class="col sm-12 md-6 form-group">
+  							<input name="yourEmail" type="text" placeholder="Bussines Email Address" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
   							<select name="yourRole" required>
@@ -93,15 +89,14 @@
   					<div class="text-left">
   						<button type="submit" class="btn btn-white-outline">SUBMIT</button>
   					</div>
+  						<input type="hidden" name="elAddress">
+  						<input type="hidden" name="elOrigin" value="Contact from GioStar">
   				</div>
   			</div>
   		</form>
   	</section>
   </div>
   <footer >
-    <div class="band text-center show-for-small hide-for-medium">
-      <a class="btn btn-white-outline" modal-open="myModal">I WANT BE PART</a>
-    </div>
     <div class="footer-nav">
       <ul class="row align-center">
         <li ><a href="about-us.html">About us</a></li>

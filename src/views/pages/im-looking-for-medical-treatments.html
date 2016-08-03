@@ -27,7 +27,7 @@ layout: default
 		</div>
 	</section>
 	<section class="contact-form">
-		<form action="post" id="contactForm">
+		<form action="medical_treatments_form.php" method="post">
 			<div class="row">
 				<div class="col sm-12 md-8">
 					<div class="row">
@@ -38,13 +38,13 @@ layout: default
 							<input name="yourNumber" type="text" placeholder="Phone number" required>
 						</div>
 						<div class="col sm-12 md-6 form-group">
-							<input name="yourEmailAddress" type="text" placeholder="EmailAddress" required>
+							<input name="yourEmail" type="text" placeholder="EmailAddress" required>
 						</div>
 						<div class="col sm-12 md-6 form-group">
 							<input name="yourCity" type="text" placeholder="City" required>
 						</div>
 						<div class="col sm-12 md-6 form-group">
-							<select name="yourWork" required>
+							<select name="yourTreatment" required>
 								<option value="" default>What treatment are you looking for?</option>
 								<option value="Cosmetic">Cosmetic</option>
 								<option value="Dental">Dental</option>

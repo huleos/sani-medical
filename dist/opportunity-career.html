@@ -34,13 +34,13 @@
   		</div>
   	</section><!-- .cover -->
   	<section class="contact-form">
-  	<div class="row">
-  		<div class="col sm-12 md-8">
-  			<h3>Let’s begin the conversation</h3>
-  			<p>Join the fastest-growing medical tourism corporate in Mexico</p>
+  		<div class="row">
+  			<div class="col sm-12 md-8">
+  				<h3>Let’s begin the conversation</h3>
+  				<p>Join the fastest-growing medical tourism corporate in Mexico</p>
+  			</div>
   		</div>
-  	</div>
-  		<form action="post" id="contactForm">
+  		<form action="career_form.php" method="post">
   			<div class="row">
   				<div class="col sm-12 md-8">
   					<div class="row">
@@ -51,7 +51,7 @@
   							<input name="yourNumber" type="text" placeholder="Phone number" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
-  							<input name="yourEmailAddress" type="text" placeholder="EmailAddress" required>
+  							<input name="yourEmail" type="text" placeholder="EmailAddress" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
   							<input name="yourCity" type="text" placeholder="City Residence" required>
@@ -63,10 +63,10 @@
   							<legend>Gender</legend>
   							<div class="radio">
   								<label for="genderMale">
-  									<input id="genderMale" type="radio" name="gender" value="Male" checked> Male
+  									<input id="genderMale" type="radio" name="yourGender" value="Male" checked required> Male
   								</label>
   								<label for="genderFemale">
-  									<input id="genderFemale" type="radio" name="gender" value="Female"> Female
+  									<input id="genderFemale" type="radio" name="yourGender" value="Female"> Female
   								</label>
   							</div>
   						</div>
@@ -103,6 +103,8 @@
   					<div class="text-left">
   						<button type="submit" class="btn btn-white-outline">SUBMIT</button>
   					</div>
+  					<input type="hidden" name="elAddress">
+  					<input type="hidden" name="elOrigin" value="From GioStar">
   				</div>
   			</div>
   		</form>
