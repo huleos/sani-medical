@@ -13,6 +13,7 @@ $city = $_POST['yourCity'];
 $dateBirth = $_POST['yourDateOfBirth'];
 $gender = $_POST['yourGender'];
 $position = $_POST['yourPosition'];
+$education = $_POST['yourEducation'];
 $english = $_POST['langEnglish'];
 $spanish = $_POST['langSpanish'];
 $worked = $_POST['yourWorked'];
@@ -34,6 +35,7 @@ if($name && $phone && $email && $city && $dateBirth && $gender && $position && $
 	Date of birth: $dateBirth \n
 	Gender: $gender \n
 	Position: $position \n
+	Highest education grade?: $education \n
 	English: $english% \n
 	Spanish: $spanish% \n
 	Have you worked in Mexico before?: $worked \n
