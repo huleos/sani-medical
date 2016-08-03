@@ -8,7 +8,8 @@ $cover-overlay-purple: rgba(map-get($brand-color, purple), .90);
 	background-blend-mode: $blend;
 }
 
-#contact{
+#contact,
+#medical-offer{
 	.cover{
 		@include overlay($cover-overlay-purple, multiply);
 	}

@@ -1130,7 +1130,8 @@ label.error {
     color: #fff;
     border-color: #742774; }
 
-#contact .cover {
+#contact .cover,
+#medical-offer .cover {
   background-color: rgba(116, 39, 116, 0.9);
   background-blend-mode: multiply; }
 

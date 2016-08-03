@@ -13,6 +13,7 @@ $city = $_POST['yourCity'];
 $treatment = $_POST['yourTreatment'];
 $message = $_POST['yourMessage'];
 $origin = $_POST['elOrigin'];
+$utm = $_POST['utm_medical_treatments'];
 $fieldHidden = isset($_POST['elAddress']) ? $_POST['elAddress'] : null;
 
 if($name && $phone && $email && $city && $treatment && $message)
@@ -26,7 +27,8 @@ if($name && $phone && $email && $city && $treatment && $message)
 	Email: $email \n
 	City: $city \n
 	Treatment: $treatment \n
-	Message: \n $message";
+	Message: \n $message \n
+	UTM: $utm";
 	
 	$headers = "From: $noreply\n"; /*Campo del Email del cliente*/
 	$headers .= "Reply-To: $noreply\n"; /*Campo del Email de respuesta*/

@@ -18,6 +18,7 @@ $spanish = $_POST['langSpanish'];
 $worked = $_POST['yourWorked'];
 $message = $_POST['yourMessage'];
 $origin = $_POST['elOrigin'];
+$utm = $_POST['utm_career'];
 $fieldHidden = isset($_POST['elAddress']) ? $_POST['elAddress'] : null;
 
 if($name && $phone && $email && $city && $dateBirth && $gender && $position && $english && $spanish && $worked && $message)
@@ -36,7 +37,8 @@ if($name && $phone && $email && $city && $dateBirth && $gender && $position && $
 	English: $english% \n
 	Spanish: $spanish% \n
 	Have you worked in Mexico before?: $worked \n
-	Message: \n $message"; 
+	Message: \n $message \n
+	UTM: $utm"; 
 	
 	$headers = "From: $noreply\n"; /*Campo del Email del cliente*/
 	$headers .= "Reply-To: $noreply\n"; /*Campo del Email de respuesta*/
