@@ -11,7 +11,7 @@ $phone = $_POST['yourNumber'];
 $email = $_POST['yourEmail'];
 $city = $_POST['yourCity'];
 $dateBirth = $_POST['yourDateOfBirth'];
-$gender = isset($_POST['yourGender']);
+$gender = $_POST['yourGender'];
 $position = $_POST['yourPosition'];
 $english = $_POST['langEnglish'];
 $spanish = $_POST['langSpanish'];
@@ -33,8 +33,8 @@ if($name && $phone && $email && $city && $dateBirth && $gender && $position && $
 	Date of birth: $dateBirth \n
 	Gender: $gender \n
 	Position: $position \n
-	English: $english % \n
-	Spanish: $spanish % \n
+	English: $english% \n
+	Spanish: $spanish% \n
 	Have you worked in Mexico before?: $worked \n
 	Message: \n $message"; 
 	

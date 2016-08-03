@@ -88,3 +88,22 @@ input[type="file"] {
 textarea {
   height: auto;
 }
+
+// Error
+input,
+select,
+textarea{
+	&.error{
+		background-color: rgba(map-get($brand-color, alert), 0.1);
+		border-color: map-get($brand-color, alert);
+	}
+}
+
+label{
+	&.error{
+		font-size: remCalc(14);
+		font-weight: bold;
+		color: map-get($brand-color, alert);
+		margin-top: remCalc(6); 
+	}
+}

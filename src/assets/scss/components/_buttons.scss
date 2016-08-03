@@ -67,4 +67,10 @@
 
 .btn-blue-outline{
 	@include button-outline-style(map-get($brand-color, blue));
+	&:hover,
+	&:focus{
+		background-color: map-get($brand-color, purple);
+		color: #fff;
+		border-color: map-get($brand-color, purple);
+	}
 }

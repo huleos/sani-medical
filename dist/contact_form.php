@@ -9,11 +9,11 @@ $noreply = 'noreply@sanimedicaltourism.com';
 $name = $_POST['yourName'];
 $location = $_POST['yourLocation'];
 $phone = $_POST['yourNumber'];
-$treatment = $_POST['whatTreatment'];
+$message = $_POST['yourMessage'];
 $origin = $_POST['elOrigin'];
 $fieldHidden = isset($_POST['elAddress']) ? $_POST['elAddress'] : null;
 
-if($name && $location && $phone && $treatment)
+if($name && $location && $phone && $message)
 {
 	$to = $myemail; 
 	$email_subject = "$origin";
@@ -22,7 +22,7 @@ if($name && $location && $phone && $treatment)
 	Name: $name \n
 	Location: $location \n
 	Phone: $phone \n
-	What treatment are you looking for?: $treatment"; 
+	Message: \n $message";
 	
 	$headers = "From: $noreply\n"; /*Campo del Email del cliente*/
 	$headers .= "Reply-To: $noreply\n"; /*Campo del Email de respuesta*/
@@ -31,5 +31,5 @@ if($name && $location && $phone && $treatment)
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
 	header('Location: /thanks.html');
-} 
+}
 ?>
