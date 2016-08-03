@@ -49,16 +49,16 @@
   							<input name="yourName" type="text" placeholder="Your name" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
-  							<input name="yourNumber" type="text" placeholder="Phone number" required>
+  							<input name="yourNumber" type="tel" placeholder="Phone number" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
-  							<input name="yourEmail" type="text" placeholder="EmailAddress" required>
+  							<input name="yourEmail" type="email" placeholder="Email address" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
   							<input name="yourCity" type="text" placeholder="City Residence" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
-  							<input name="yourDateOfBirth" type="text" placeholder="Date of birth" required>
+  							<input name="yourDateOfBirth" type="date" placeholder="Date of birth" required>
   						</div>
   						<div class="col sm-12 md-6 form-group">
   							<legend>Gender</legend>
@@ -75,25 +75,29 @@
   							<input name="yourPosition" type="text" placeholder="Position" required>
   						</div>
   						<div class="col sm-12 md-3 form-group">
-  							<div class="row">
+  							<div class="row align-middle">
   								<div class="col sm-4">English</div>
-  								<div class="col sm-6"><input name="langEnglish" type="text"></div>
+  								<div class="col sm-6"><input name="langEnglish" type="number"></div>
   								<div class="col sm-2">%</div>
   							</div>
   						</div>
   						<div class="col sm-12 md-3 form-group">
-  							<div class="row">
+  							<div class="row align-middle">
   								<div class="col sm-4">Spanish</div>
-  								<div class="col sm-6"><input name="langSpanish" type="text"></div>
+  								<div class="col sm-6"><input name="langSpanish" type="number"></div>
   								<div class="col sm-2">%</div>
   							</div>
   						</div>
   						<div class="col sm-12 md-6 form-group">
-  							<select name="yourWorked" required>
-  								<option value="" default>Have you worked in Mexico before?</option>
-  								<option value="Yes">Yes</option>
-  								<option value="No">No</option>
-  							</select>
+  							<legend>Have you worked in Mexico before?</legend>
+  							<div class="radio">
+  								<label for="optionYes">
+  									<input id="optionYes" type="radio" name="yourWorked" value="Yes" checked required> Yes
+  								</label>
+  								<label for="optionNo">
+  									<input id="optionNo" type="radio" name="yourWorked" value="No"> No
+  								</label>
+  							</div>
   						</div>
   					</div>
   				</div>
