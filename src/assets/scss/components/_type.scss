@@ -96,6 +96,18 @@ ol{
   list-style: none;
 }
 
+.rescue{
+  margin-top: remCalc(32);
+}
+
+ul{
+  &.offer-list{
+    color: map-get($brand-color, blue);
+    text-transform: uppercase;
+    font-family: $font-serif; 
+  }
+}
+
 @each $align in (left, right, center, justify) {
   .text-#{$align}{
     text-align: $align;

@@ -27,6 +27,33 @@
 	z-index: $modal-zindex + 1;
 }
 
+.modal-header{
+	margin: remCalc(-16);
+	margin-bottom: remCalc(32);
+	padding: remCalc(16); 
+	background-color: map-get($brand-color, blue);
+	text-align: center;
+	img{
+		max-width: 80px;
+		display: block;
+		margin: 0 auto remCalc(16); 
+	}
+	p{
+		color: $white;
+		font-size: remCalc(24);
+	}
+}
+
+.modal-content{
+	max-width: remCalc(320);
+	margin: 0 auto; 
+	text-align: center; 
+	.btn{
+		display: block;
+		margin-bottom: remCalc(16);
+	}
+}
+
 .btn-close {
 	position: absolute;
 	color: $white;

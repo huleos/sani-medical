@@ -48,7 +48,7 @@ gulp.task('resetPages', (done) => {
 
 // Compile Scss
 gulp.task('styles', () => {
-	return gulp.src('src/assets/scss/huleos.scss')
+	return gulp.src('src/assets/scss/style.scss')
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))

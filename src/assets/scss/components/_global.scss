@@ -44,6 +44,10 @@ hr {
   border-top: 1px solid $hr-border;
 }
 
+section{
+  margin-bottom: remCalc(48);
+}
+
 .left{ float: left !important; }
 .right{ float: right !important; }
 .clearfix{ @include clearfix; }

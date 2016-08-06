@@ -14,11 +14,14 @@
 	display: flex;
 	justify-content: center;
 	.nav-brand{
+		max-width: remCalc(175);
 		padding: $nav-brand-padding;
 		display: inline-block;
 		color: $nav-brand-color;
+		transition: all .22s ease-out; 
 		&:hover{
 			text-decoration:none;
+			opacity: .75; 
 		}
 	}
 }

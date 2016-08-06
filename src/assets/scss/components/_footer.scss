@@ -1,0 +1,57 @@
+//
+// Footer
+// --------------------------------------------------
+
+footer{
+	&.fix{
+		padding-bottom: remCalc(80);
+		.band{
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.footer-nav{
+	ul{
+		list-style: none;
+		padding-left: 0;
+		li{
+			padding: remCalc(6) remCalc(14);
+			a{
+				display: inline-block;
+			}
+			&.active{
+				a{
+					color: map-get($brand-color, purple);
+				}
+			}
+		}
+	}
+}
+
+.copyright{
+	background-color: map-get($brand-color, blue);
+	color: $white;
+	padding: remCalc(22) remCalc(15) remCalc(10);
+	margin-top: remCalc(22);
+}
+
+.band{
+	background-color: map-get($brand-color, purple);
+	padding: remCalc(15) remCalc(30);
+	width: 100%;
+	margin-bottom: remCalc(15);  
+}
+
+@media #{$breakpoint-medium} {
+
+	footer{
+		&.fix{
+			padding-bottom: 0;
+		}
+	}
+
+}
