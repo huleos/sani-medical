@@ -11,6 +11,7 @@ const gulp            = require('gulp'),
 			sourcemaps      = require('gulp-sourcemaps'),
 			plumber         = require('gulp-plumber'),
 			gutil           = require('gulp-util'),
+			sitemap         = require('gulp-sitemap'),
 			del             = require('del'),
 			browserSync     = require('browser-sync').create();
 
@@ -37,8 +38,7 @@ gulp.task('pages', () => {
       helpers: 'src/views/helpers'
     }))
     .pipe(gulp.dest('dist'));
-}
-);
+});
 
 // Load updated HTML templates and partials into Panini
 gulp.task('resetPages', (done) => {
@@ -96,10 +96,23 @@ gulp.task('clean', () => {
 });
 
 // Copy files out of the assets folder
-gulp.task('cp-dependencies', function(){
+gulp.task('cp-dependencies', () => {
 	gulp.src('src/*.*')
 	.pipe(gulp.dest('dist'));
 });
+
+// Generate sitemap
+gulp.task('sitemap', () => {
+	gulp.src('dist/*.html', {
+		read: false
+	})
+	.pipe(sitemap({
+		siteUrl: 'http://sanimedicaltourism.com',
+		changefreq: 'monthly'
+	}))
+	.pipe(gulp.dest('dist'));
+});
+
 
 // Start a server with BrowserSync to preview the site in
 gulp.task('server', (done) => {
@@ -112,7 +125,7 @@ gulp.task('server', (done) => {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build', (done) => {
-	sequence('clean', ['pages', 'styles', 'scripts', 'images'], 'cp-dependencies', done);
+	sequence('clean', ['pages', 'styles', 'scripts', 'images'], 'cp-dependencies', 'sitemap', done);
 });
 
 // Build the site, run the server, and watch for file changes
