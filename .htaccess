@@ -3,8 +3,7 @@ RewriteEngine on
 ## REDIRECT FOLDER DIST ##
 RewriteCond %{HTTP_HOST} ^sanimedicaltourism.com$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com$
-RewriteRule ^(.*)$ http://sanimedicaltourism.com/$1 [R=permanent,L]
-# RewriteRule ^index\.html$ "http\:\/\/sanimedicaltourism\.com\/" [R=301,L]
+RewriteRule ^index\.html$ "http\:\/\/sanimedicaltourism\.com\/" [R=301,L]
 
 RewriteCond %{REQUEST_URI} !dist/
 RewriteRule (.*) /dist/$1 [L]
