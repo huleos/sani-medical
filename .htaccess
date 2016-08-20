@@ -5,9 +5,9 @@ RewriteBase /dist
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{HTTP_HOST} ^sanimedicaltourism\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com$
-RewriteRule ^index\.html$ "http\:\/\/sanimedicaltourism\.com\/" [R=301,L]
+# RewriteCond %{HTTP_HOST} ^sanimedicaltourism\.com$ [OR]
+# RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com$
+# RewriteRule ^index\.html$ "http\:\/\/sanimedicaltourism\.com\/" [R=301,L]
 RewriteRule (.*) /dist/$1 [L]
 
 
