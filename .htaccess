@@ -1,13 +1,20 @@
 RewriteEngine On
 
-## REDIRECT FOLDER DIST ##
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^sanimedicaltourism.com$ [NC,OR]
-# RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com$
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^sanimedicaltourism\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com$
 RewriteRule ^index\.html$ "http\:\/\/sanimedicaltourism\.com\/" [R=301,L]
+</IfModule>
 
-RewriteCond %{REQUEST_URI} !dist/
-RewriteRule (.*) /dist/$1 [L]
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /dist/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+</IfModule>
 ## EXPIRES CACHING ##
 ExpiresByType image/jpg "access 1 year"
 ExpiresByType image/jpeg "access 1 year"
