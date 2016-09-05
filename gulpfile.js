@@ -97,7 +97,7 @@ gulp.task('clean', () => {
 
 // Copy files out of the assets folder
 gulp.task('cp-dependencies', () => {
-	gulp.src('src/*.*')
+	gulp.src(['src/*.*', 'src/.*'])
 	.pipe(gulp.dest('dist'));
 });
 
