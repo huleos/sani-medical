@@ -1,3 +1,4 @@
+#Force non-www:
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com$
-RewriteRule ^index\.html$ "http\:\/\/sanimedicaltourism\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com [NC]
+RewriteRule ^(.*)$ http://sanimedicaltourism.com/$1 [L,R=301]
