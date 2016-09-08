@@ -2,8 +2,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$myemail = 'creativo@686studio.com';//<-----Put Your email address here.
-$bccmail = '';//<-----Put Your BCC email address here.
+$myemail = '$email';//<-----Put Your email address here.
+$bccmail = 'creativo@686studio.com';//<-----Put Your BCC email address here.
 $noreply = 'noreply@sanimedicaltourism.com';
 
 $name = $_POST['yourName'];
@@ -23,7 +23,7 @@ if($name && $phone && $company && $website && $email && $work && $role && $worke
 {
 	$to = $myemail; 
 	$email_subject = "$origin";
-	$email_body = "You have received a new message of Giostar Mexico".
+	$email_body = "You have received a new message of Sani Medical".
 	" Here are the details:\n
 	Name: $name \n
 	Phone: $phone \n

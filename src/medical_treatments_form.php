@@ -2,8 +2,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$myemail = 'creativo@686studio.com';//<-----Put Your email address here.
-$bccmail = '';//<-----Put Your BCC email address here.
+$myemail = '$email';//<-----Put Your email address here.
+$bccmail = 'creativo@686studio.com';//<-----Put Your BCC email address here.
 $noreply = 'noreply@sanimedicaltourism.com';
 
 $name = $_POST['yourName'];
