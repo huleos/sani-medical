@@ -23,7 +23,7 @@ if($name && $phone && $company && $website && $email && $work && $role && $worke
 {
 	$to = $myemail; 
 	$email_subject = "$origin";
-	$email_body = "You have received a new message of Giostar Mexico".
+	$email_body = "You have received a new message of Sani Medical".
 	" Here are the details:\n
 	Name: $name \n
 	Phone: $phone \n
