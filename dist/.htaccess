@@ -2,5 +2,5 @@
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com [NC]
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-# RewriteRule ^(.*)$ http://sanimedicaltourism.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://sanimedicaltourism.com/$1 [L,R=301]
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
