@@ -1403,4 +1403,11 @@ label.error {
   .contact-form p {
     margin-bottom: 2rem; }
 
+#medical-offer .title {
+  margin-bottom: 1.75rem;
+  margin-top: 1.75rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
