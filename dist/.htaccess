@@ -1,8 +1,9 @@
 #Force non-www:
 RewriteEngine On
 
+# without www
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://sanimedicaltourism.com/$1 [L,R=301]
-
+# with www
 RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com [NC]
 RewriteRule ^(.*)$ https://sanimedicaltourism.com/$1 [L,R=301]
