@@ -18,7 +18,7 @@ $fieldHidden = isset($_POST['elAddress']) ? $_POST['elAddress'] : null;
 
 if($name && $phone && $email && $city && $treatment && $message)
 {
-	$to = $myemail; 
+	$to = $email; 
 	$email_subject = "$origin";
 	$email_body = "You have received a new message of Sani Medical".
 	" Here are the details:\n
