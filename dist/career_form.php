@@ -42,7 +42,7 @@ if($name && $phone && $email && $city && $dateBirth && $gender && $position && $
 	Message: \n $message \n
 	UTM: $utm"; 
 	
-	$headers = "From: $noreply\n"; /*Campo del Email del cliente*/
+	$headers = "From: $name\n"; /*Campo del Email del cliente*/
 	$headers .= "Reply-To: $noreply\n"; /*Campo del Email de respuesta*/
 	$headers .= "Bcc: " . $bccmail; /*Campo del Email de copia oculta*/
 	if(!$fieldHidden)
