@@ -18,7 +18,7 @@ $fieldHidden = isset($_POST['elAddress']) ? $_POST['elAddress'] : null;
 
 if($name && $phone && $email && $city && $treatment && $message)
 {
-	$to = $email; 
+	$to = $noreply; 
 	$email_subject = "$origin";
 	$email_body = "You have received a new message of Sani Medical".
 	" Here are the details:\n
@@ -30,7 +30,7 @@ if($name && $phone && $email && $city && $treatment && $message)
 	Message: \n $message \n
 	UTM: $utm";
 	
-	$headers = "From: Sani Medical Tourism\n"; /*Campo del Email del cliente*/
+	$headers .= "From: Sani Medical Tourism\n"; /*Campo del Email del cliente*/
 	$headers .= "Reply-To: $noreply\n"; /*Campo del Email de respuesta*/
 	$headers .= "Bcc: " . $bccmail; /*Campo del Email de copia oculta*/
 	if(!$fieldHidden)
