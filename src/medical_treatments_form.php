@@ -2,8 +2,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$myemail = '$email';//<-----Put Your email address here.
-$bccmail = 'creativo@686studio.com';//<-----Put Your BCC email address here.
+$myemail = '';
+$bccmail = 'creativo@686studio.com';
 $noreply = 'noreply@sanimedicaltourism.com';
 
 $name = $_POST['yourName'];
@@ -30,9 +30,9 @@ if($name && $phone && $email && $city && $treatment && $message)
 	Message: \n $message \n
 	UTM: $utm";
 	
-	$headers = "From: $name <$email>\n"; /*Campo del Email del cliente*/
-	$headers .= "Reply-To: $noreply\n"; /*Campo del Email de respuesta*/
-	$headers .= "Bcc: " . $bccmail; /*Campo del Email de copia oculta*/
+	$headers = "From: $name <$email>\n";
+	$headers .= "Reply-To: $noreply\n";
+	$headers .= "Bcc: " . $bccmail;
 	if(!$fieldHidden)
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
