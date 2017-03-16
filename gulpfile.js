@@ -115,12 +115,16 @@ gulp.task('sitemap', () => {
 
 
 // Start a server with BrowserSync to preview the site in
-gulp.task('server', (done) => {
-  browserSync.init({
-    server: 'dist',
-      reloadDelay: 500
-  });
-  done();
+gulp.task('server', ['build'], (done) => {
+	browserSync.init({
+		server: {
+			baseDir: 'dist'
+		},
+			port: 4567,
+			reloadDelay: 500,
+			reloadDebounce: 500
+	});
+	done();
 });
 
 // Build the "dist" folder by running all of the below tasks
@@ -130,7 +134,7 @@ gulp.task('build', (done) => {
 
 // Build the site, run the server, and watch for file changes
 // Watch for changes to static assets, pages, Scss, and JavaScript
-gulp.task('default', ['build', 'server'], () => {
+gulp.task('default', ['server'], () => {
 	gulp.watch(['src/views/**/*.{html,hbs,handlebars}'], ['pages']).on('change', browserSync.reload);
 	gulp.watch(['src/views/{layouts,partials,helpers,data}/**/*'], ['resetPages']).on('change', browserSync.reload);
 	gulp.watch(['src/assets/scss/**/*.scss'], ['styles']).on('change', browserSync.reload);
