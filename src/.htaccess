@@ -2,15 +2,15 @@
 RewriteEngine On
 
 ### Without WWW
-# RewriteCond %{HTTPS} !=on
-# RewriteRule ^(.*)$ https://sanimedicaltourism.com/$1 [L,R=301]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://sanimedicaltourism.com/$1 [L,R=301]
 ### With WWW
-# RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com [NC]
-# RewriteRule ^(.*)$ https://sanimedicaltourism.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com [NC]
+RewriteRule ^(.*)$ https://sanimedicaltourism.com/$1 [L,R=301]
 
 
 
 ### Test
 
-RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com [NC]
-RewriteRule ^(.*)$ http://sanimedicaltourism.com/$1 [L,R=301]
+# RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com [NC]
+# RewriteRule ^(.*)$ http://sanimedicaltourism.com/$1 [L,R=301]
