@@ -1,11 +1,12 @@
 RewriteEngine On
 
-## FORCE NON-WWW: ##
+### Without WWW
 RewriteBase /
-#RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-#RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://sanimedicaltourism.com/$1 [L,R=301]
+### With WWW
+RewriteCond %{HTTP_HOST} ^www\.sanimedicaltourism\.com [NC]
+RewriteRule ^(.*)$ https://sanimedicaltourism.com/$1 [L,R=301]
 
 ## REDIRECT FOLDER DIST ##
 RewriteCond %{REQUEST_URI} !dist/
