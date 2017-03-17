@@ -4,7 +4,8 @@ RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTPS} !=on
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+#RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
 ## REDIRECT FOLDER DIST ##
 RewriteCond %{REQUEST_URI} !dist/

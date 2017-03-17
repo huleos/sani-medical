@@ -107,7 +107,7 @@ gulp.task('sitemap', () => {
 		read: false
 	})
 	.pipe(sitemap({
-		siteUrl: 'http://sanimedicaltourism.com',
+		siteUrl: 'https://sanimedicaltourism.com',
 		changefreq: 'monthly'
 	}))
 	.pipe(gulp.dest('dist'));
