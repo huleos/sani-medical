@@ -1,5 +1,11 @@
 RewriteEngine On
 
+## FORCE NON-WWW: ##
+RewriteBase /
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
 ## REDIRECT FOLDER DIST ##
 RewriteCond %{REQUEST_URI} !dist/
 RewriteRule (.*) /dist/$1 [L]
