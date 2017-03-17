@@ -17,9 +17,9 @@ $(function() {
 		e.preventDefault();
 	});
 
-	$('.modal').click(function() {
-		$(this).fadeOut(350);
-	});
+	// $('.modal').click(function() {
+	// 	$(this).parent().fadeOut(350);
+	// });
 
 	// Form Validation
 	$('form').validate();
