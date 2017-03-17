@@ -1,5 +1,5 @@
 $(function() {
-	  ///////////
+		///////////
 	 // Modal //
 	///////////
 
@@ -11,16 +11,17 @@ $(function() {
 	});
 
 	// Close
-	$('[modal-close]').on('click', function(e)  {
+	$('[modal-close], .modal').on('click', function(e)  {
 		var targeted_modal_class = $(this).attr('modal-close');
 		$('[modal="' + targeted_modal_class + '"]').fadeOut(350);
 		e.preventDefault();
 	});
 
-	// $('[modal]').click(function() {
-	// 	var targeted_modal_class = $(this).attr('modal');
-	// 	$('[modal="' + targeted_modal_class + '"]').fadeOut(350);
-	// });
+	$('.modal').click(function() {
+		$(this).fadeOut(350);
+	});
+
+	// Form Validation
 	$('form').validate();
 
 });
