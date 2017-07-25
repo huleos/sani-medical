@@ -7,12 +7,12 @@ $bccmail = 'creativo@686studio.com';
 $noreply = 'noreply@sanimedicaltourism.com';
 
 $name = $_POST['yourName'];
-$location = $_POST['yourLocation'];
+$email = $_POST['yourEmail'];
 $phone = $_POST['yourNumber'];
+$date = $_POST['yourDate'];
 $message = $_POST['yourMessage'];
 $origin = $_POST['elOrigin'];
-$utm = $_POST['utm_contact'];
-$fieldHidden = isset($_POST['elAddress']) ? $_POST['elAddress'] : null;
+$fieldHidden = isset($_POST['honeypot']) ? $_POST['honeypot'] : null;
 
 if($name && $location && $phone && $message)
 {
