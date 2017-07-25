@@ -14,7 +14,7 @@ $message = $_POST['yourMessage'];
 $origin = $_POST['elOrigin'];
 $fieldHidden = isset($_POST['honeypot']) ? $_POST['honeypot'] : null;
 
-if($name && $location && $phone && $message)
+if($name && $email && $phone && $date && $message)
 {
 	$to = $noreply; 
 	$email_subject = "$origin";
