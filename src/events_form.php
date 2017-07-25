@@ -23,6 +23,7 @@ if($name && $email && $phone && $date && $message)
 	Name: $name \n
 	Email: $email \n
 	Phone: $phone \n
+	Desired date: $date \n
 	Message: \n $message";
 	
 	$headers = "From: $name <$email>\n";
