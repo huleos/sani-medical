@@ -21,10 +21,9 @@ if($name && $location && $phone && $message)
 	$email_body = "You have received a new message of Sani Medical".
 	" Here are the details:\n
 	Name: $name \n
-	Location: $location \n
+	Email: $email \n
 	Phone: $phone \n
-	Message: \n $message \n
-	UTM: $utm";
+	Message: \n $message";
 	
 	$headers = "From: $name <$email>\n";
 	$headers .= "Reply-To: $noreply\n";
