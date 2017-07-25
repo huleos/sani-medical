@@ -22,6 +22,7 @@ const PRODUCTION = gutil.env.production;
 // Javascript Paths
 const jsFiles = [
 	'node_modules/jquery/dist/jquery.js',
+	'node_modules/jquery-ui/ui/widgets/datepicker.js',
 	'node_modules/jquery-validation/dist/jquery.validate.js',
 	'src/assets/js/main.js'
 ];

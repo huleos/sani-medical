@@ -36,4 +36,7 @@ $(function() {
 	// Form Validation
 	$('form').validate();
 
+	// Datepicker
+	$( "#datepicker" ).datepicker();
+
 });
