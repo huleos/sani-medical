@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$myemail = '';
+$myemail = 'genesis@sanimedicaltourism.com';
 $bccmail = 'creativo@686studio.com';
 $noreply = 'noreply@sanimedicaltourism.com';
 
