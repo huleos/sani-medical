@@ -16,7 +16,7 @@ $fieldHidden = isset($_POST['honeypot']) ? $_POST['honeypot'] : null;
 
 if($name && $email && $phone && $date && $message)
 {
-	$to = $noreply; 
+	$to = $myemail; 
 	$email_subject = "$origin";
 	$email_body = "You have received a new message of Sani Medical".
 	" Here are the details:\n
@@ -27,7 +27,7 @@ if($name && $email && $phone && $date && $message)
 	Message: \n $message";
 	
 	$headers = "From: $name <$email>\n";
-	$headers .= "Reply-To: $noreply\n";
+	$headers .= "Reply-To: $email\n";
 	$headers .= "Bcc: " . $bccmail;
 	if(!$fieldHidden)
 	mail($to,$email_subject,$email_body,$headers);
