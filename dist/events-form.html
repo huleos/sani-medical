@@ -29,40 +29,52 @@
     </nav>
   </header><!-- header -->  
   <div id="events-form" role="main">
-  	<section style="margin-bottom:20px;" class="row expanded align-center align-middle text-center">
+  	<section style="margin-bottom: 3rem;" class="row expanded align-center align-middle text-center">
   		<img style="width: 100%;" src="assets/img/cover-landing.jpg" alt="">
   	</section><!-- .cover -->
-  	<section class="row ">
-  		<div class="col sm-12 lg-8">
-  			<h2>LIVE AN UNFORGETTABLE MEDICAL EXPERIENCE</h2>
-  			<p><b>Register now</b> and you may be eligible to get <b>complementary lodging at Los Algodones, Mexico.</b> Plus, by getting any dental procedure done at Sani Dental Group, you’ll receive a <b>free diagnosis and Panoramic X-Ray with your appointment.</b></p>
-  		</div>
-  		<div class="col sm-12 lg-4 contact-form"> 
-  			<form action="">
-  				<div class="form-group">
-  					<label>Your Name</label>
-  					<input type="text" name="yourName" required>
+  	<section class="row align-center">
+  		<div class="col sm-12 md-8">
+  			<div class="row">
+  				<div class="col sm-12">
+  					<h2>LIVE AN UNFORGETTABLE MEDICAL EXPERIENCE</h2>
+  					<p><b>Register now</b> and you may be eligible to get <b>complementary lodging at Los Algodones, Mexico.</b> Plus, by getting any dental procedure done at Sani Dental Group, you’ll receive a <b>free diagnosis and Panoramic X-Ray with your appointment.</b></p>
   				</div>
-  				<div class="form-group">
-  					<label>Your Email</label>
-  					<input type="text" name="yourEmail" required>
-  				</div>
-  				<div class="form-group">
-  					<label>Contact Number</label>
-  					<input type="text" name="yourNumber">
-  				</div>
-  				<div class="form-group">
-  					<label>Desired Date for your Appointment</label>
-  					<input type="text" name="yourDate" id="datepicker" required>
-  				</div>
-  				<div class="form-group">
-  					<label>Your Message</label>
-  					<textarea name="yourMessage" cols="30" required></textarea>
-  				</div>
-  				<button type="Submit" class="btn btn-purple">CONFIRM</button>
-  			</form>
-  		</div>
+  			</div>
   	</section>
+  	<div class="row expanded align-center contact-form">
+  		<div class="col sm-12 md-8">
+  			<div class="row align-center">
+  				<div class="col sm-10">
+  					<form action="events_form.php" method="post">
+  						<div class="form-group">
+  							<label>Your Name</label>
+  							<input type="text" name="yourName" required>
+  						</div>
+  						<div class="form-group">
+  							<label>Your Email</label>
+  							<input type="text" name="yourEmail" required>
+  						</div>
+  						<div class="form-group">
+  							<label>Contact Number</label>
+  							<input type="text" name="yourNumber">
+  						</div>
+  						<div class="form-group">
+  							<label>Desired Date for your Appointment</label>
+  							<input type="text" name="yourDate" id="datepicker" required>
+  						</div>
+  						<div class="form-group">
+  							<label>Your Message</label>
+  							<textarea name="yourMessage" cols="30" required style="min-height: 10rem;"></textarea>
+  						</div>
+  						<input type="hidden" name="honeypot">
+  						<input type="hidden" name="elOrigin" value="You have received a email on Sani Medical / events-form">
+  						<button type="Submit" class="btn btn-purple">CONFIRM</button>
+  					</form>
+  				</div>
+  			</div>
+  		</div>
+  	</div><!-- .contact-form -->
+  
   </div>
   <footer class="fix">
     <div class="band text-center show-for-small hide-for-medium">
