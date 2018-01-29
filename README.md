@@ -17,17 +17,17 @@ git clone git@github.com:huleos/sani-medical.git
 Open folder in your command line, and install dependencies:
 ```
 cd projectname
-npm install
+npm install or yarn
 ```
 
 Run:
 ```
-npm start
+npm run dev or yarn run dev
 ```
 Default task server, you can view it at: `http://localhost:3000`
 
 
-To create compressed, production-ready assets, run `npm run build`.
+To create compressed, production-ready assets, run `npm run build o yarn run build`.
 
 ####Author
 Huleos Framework is a project by [Julio Cesar Montenegro](http://huleos.com)
