@@ -20,7 +20,7 @@
 	}
 }
 
-.col{
+.col {
 	flex: 1 1 0px;
 	padding-left: $grid-gutter;
 	padding-right: $grid-gutter;
@@ -71,9 +71,16 @@
 }
 
 // Sizing (shrink)
-.shrink{
+.shrink {
 	flex: 0 0 auto;
 	max-width: 100%; 
+}
+
+// Display 
+// Flex
+.flex {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 // Vertical Align
@@ -86,7 +93,7 @@ $flex-justify: (
 );
 
 @each $vdir, $prop in $flex-justify{
-  .align-#{$vdir}{
+  .align-#{$vdir} {
     justify-content: #{$prop};
   }
 }
@@ -101,7 +108,7 @@ $flex-align: (
 );
 
 @each $hdir, $prop in $flex-align{
-  .align-#{$hdir}{
+  .align-#{$hdir} {
     align-items: #{$prop};
   }
 }
